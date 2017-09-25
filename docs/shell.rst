@@ -35,8 +35,13 @@ Options:
                           Use the specified protocol instead of autodetecting
     -d, --debug           Output debug information, repeat to see all XML data
     -o PORT, --port=PORT  SSL port to connect to
-    -s SSL_VERSION, --ssl=SSL_VERSION
-                          The SSL/TLS version to use for connecting to the iLO
+    --ssl-verify          Verify SSL certificates against the trusted CA's
+    --ssl-ca-file=SSL_CA_FILE
+                          CA bundle to validate iLO certificate against, instead
+                          of the system CA's
+    --ssl-ignore-hostname
+                          Don't check if the hostname matches the certificate
+                          when verifying SSL certificates
     -h, --help            show this help message or help for a method
     -H, --help-methods    show all supported methods
 
@@ -136,7 +141,7 @@ Available methods
 -----------------
 All methods available to the python API are also available to the command line.
 These methods are documented separately in further pages here and in the `ilo
-scripting guide`_ published by HP.
+scripting guide`_ published by Hewlett Packard Enterprise.
 
-.. _`hp`: http://www.hp.com/go/ilo
-.. _`ilo scripting guide`: http://www.hp.com/support/ilo4_cli_gde_en
+.. _`hp`: http://www.hpe.com/info/ilo
+.. _`ilo scripting guide`: http://www.hpe.com/support/ilo4_cli_gde_en
