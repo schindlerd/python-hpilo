@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Access from the shell &mdash; python-hpilo 3.9 documentation</title>
+    <title>Access from the shell &mdash; python-hpilo 4.0 documentation</title>
     
     <link rel="stylesheet" href="_static/cloud.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '3.9',
+        VERSION:     '4.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -27,7 +27,7 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/cloud.js"></script>
-    <link rel="top" title="python-hpilo 3.9 documentation" href="index.html" />
+    <link rel="top" title="python-hpilo 4.0 documentation" href="index.html" />
     <link rel="next" title="General server and iLO information" href="info.html" />
     <link rel="prev" title="Access from Python" href="python.html" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,7 +50,7 @@
         <li class="right" >
           <a href="python.html" title="Access from Python"
              accesskey="P">previous</a> &nbsp; &nbsp;</li>
-    <li><a href="index.html">python-hpilo 3.9 documentation</a> &raquo;</li>
+    <li><a href="index.html">python-hpilo 4.0 documentation</a> &raquo;</li>
  
       </ul>
     </div>
@@ -119,10 +119,19 @@ specified.</td></tr>
 <kbd><span class="option">-o <var>PORT</var></span>, <span class="option">--port=<var>PORT</var></span></kbd></td>
 </tr>
 <tr><td>&nbsp;</td><td>SSL port to connect to</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">--ssl-verify</span></kbd></td>
+<td>Verify SSL certificates against the trusted CA&#8217;s</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-s <var>SSL_VERSION</var></span>, <span class="option">--ssl=<var>SSL_VERSION</var></span></kbd></td>
+<kbd><span class="option">--ssl-ca-file=<var>SSL_CA_FILE</var></span></kbd></td>
 </tr>
-<tr><td>&nbsp;</td><td>The SSL/TLS version to use for connecting to the iLO</td></tr>
+<tr><td>&nbsp;</td><td>CA bundle to validate iLO certificate against, instead
+of the system CA&#8217;s</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">--ssl-ignore-hostname</span></kbd></td>
+</tr>
+<tr><td>&nbsp;</td><td>Don&#8217;t check if the hostname matches the certificate
+when verifying SSL certificates</td></tr>
 <tr><td class="option-group">
 <kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
 <td>show this help message or help for a method</td></tr>
@@ -222,8 +231,8 @@ or <code class="xref py py-data docutils literal"><span class="pre">%PATH%</span
 <div class="section" id="available-methods">
 <h2>Available methods<a class="headerlink" href="#available-methods" title="Permalink to this headline">¶</a></h2>
 <p>All methods available to the python API are also available to the command line.
-These methods are documented separately in further pages here and in the <a class="reference external" href="http://www.hp.com/support/ilo4_cli_gde_en">ilo
-scripting guide</a> published by HP.</p>
+These methods are documented separately in further pages here and in the <a class="reference external" href="http://www.hpe.com/support/ilo4_cli_gde_en">ilo
+scripting guide</a> published by Hewlett Packard Enterprise.</p>
 </div>
 </div>
 
@@ -291,7 +300,7 @@ scripting guide</a> published by HP.</p>
         <li class="right" >
           <a href="python.html" title="Access from Python"
              >previous</a> &nbsp; &nbsp;</li>
-    <li><a href="index.html">python-hpilo 3.9 documentation</a> &raquo;</li>
+    <li><a href="index.html">python-hpilo 4.0 documentation</a> &raquo;</li>
  
       </ul>
     </div>
